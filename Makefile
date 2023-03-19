@@ -1,5 +1,5 @@
 setup:
-	sudo apt install -y build-essential gcc g++ autoconf automake libtool bison flex gettext patch texinfo wget git gawk curl lzma bc quilt cpio unzip rsync python3
+	sudo apt install -y build-essential gcc g++ autoconf automake libtool bison flex gettext patch texinfo wget git gawk curl lzma bc quilt cpio unzip rsync python3 python2
 
 build: setup
 	buildroot.rockchip.ext/setup.sh

@@ -21,11 +21,11 @@ echo creating uboot.img
 currentDir=`pwd`
 cd $ubootName; ./make.sh;
 cd $currentDir
-cp $ubootName/uboot.img $BINARIES_DIR/u-boot.itb
+cp $ubootName/u-boot.img $BINARIES_DIR/u-boot.itb
 
 # to take rockchip-bsp's boot loaders, rather then generating our own ...
 echo creating idbloader.img
-$ubootName/tools/mkimage -n rk3588 -T rksd -d $RKBIN/bin/rk35/rk3588_ddr_lp4_2112MHz_lp5_2736MHz_v1.07.bin:$ubootName/spl/u-boot-spl.bin $BINARIES_DIR/idbloader.img
+$ubootName/tools/mkimage -n rk3588 -T rksd -d $RKBIN/bin/rk35/rk3588_ddr_lp4_2112MHz_lp5_2736MHz_v1.08.bin:$ubootName/spl/u-boot-spl.bin $BINARIES_DIR/idbloader.img
 
 # Generate the uboot script
 echo creating boot.scr

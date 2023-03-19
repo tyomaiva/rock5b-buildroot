@@ -1,0 +1,4 @@
+Useful links/commands:
++ git clone -b stable-5.10-rock5 --depth 1 https://github.com/radxa/u-boot.git
++ git clone -b master https://github.com/radxa/rkbin.git # Pre-built Rockchip binaries, including first stage loader and ATF (Arm Trustzone Firmware)
++ git clone -b debian https://github.com/radxa/build.git # Radxa helper script files and configuration files for building U-Boot, Linux kernel and rootfs.

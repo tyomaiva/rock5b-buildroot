@@ -11,7 +11,7 @@ Index: uboot-stable-5.10-rock5/make.sh
 -CROSS_COMPILE_ARM64=../prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
 +RKBIN_TOOLS=../../images/rkbin/tools
 +CROSS_COMPILE_ARM32=
-+CROSS_COMPILE_ARM64=../../host/bin/aarch64-buildroot-linux-uclibc-
++CROSS_COMPILE_ARM64=../../host/bin/aarch64-none-linux-gnu-
  ########################################### User not touch #############################################
  # Declare global INI file searching index name for every chip, update in select_chip_info()
  RKCHIP=
@@ -20,7 +20,7 @@ Index: uboot-stable-5.10-rock5/make.sh
  		else
  			if grep -q '^CONFIG_ARM64=y' .config ; then
 -				CROSS_COMPILE_ARM64=$(cd `dirname ${CROSS_COMPILE_ARM64}`; pwd)"/aarch64-linux-gnu-"
-+				CROSS_COMPILE_ARM64=$(cd `dirname ${CROSS_COMPILE_ARM64}`; pwd)"/aarch64-buildroot-linux-uclibc-"
++				CROSS_COMPILE_ARM64=$(cd `dirname ${CROSS_COMPILE_ARM64}`; pwd)"/aarch64-none-linux-gnu-"
  			else
  				CROSS_COMPILE_ARM32=$(cd `dirname ${CROSS_COMPILE_ARM32}`; pwd)"/arm-linux-gnueabihf-"
  			fi

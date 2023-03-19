@@ -37,7 +37,7 @@ BR2_PACKAGE_HOST_GDB_ARCH_SUPPORTS=y
 
 
 # Rock-Chip repos - mostly for sdcard image generation
-BR2_PACKAGE_RKBIN3588=y
+BR2_PACKAGE_RKBIN=y
 
 # post build sdcard image generaton
 BR2_ROOTFS_POST_BUILD_SCRIPT="$(BR2_EXTERNAL)/board/RK3588/post-build.sh"
